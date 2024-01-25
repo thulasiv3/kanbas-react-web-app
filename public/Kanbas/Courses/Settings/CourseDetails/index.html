@@ -1,0 +1,212 @@
+<h2>Course Details</h2>
+<table>
+    <tbody>
+        <tr>
+            <td valign="top">
+                <h4>Image: </h4>
+                <br>
+                <h4>Name: </h4>
+                <br>
+                <h4>Course Code: </h4>
+                <br>
+                <h4>Blueprint Course: </h4>
+                <br>
+                <h4>Course Template: </h4>
+                <br>
+                <h4>Time Zone: </h4>
+                <br>
+                <h4>SIS ID: </h4>
+                <br>
+                <h4>Subaccount: </h4>
+                <br>
+                <h4>Term: </h4>
+                <br>
+                <h4>Participation: </h4>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <h4>Default due time: </h4>
+                <br>
+                <h4>Language: </h4>
+                <br>
+                <h4>File Storage: </h4>
+                <br>
+                <h4>Large Course: </h4>
+                <br>
+                <h4>Grading Scheme: </h4>
+                <br>
+                <h4>License: </h4>
+                <br>
+                <h4>File Copyright: </h4>
+                <br>
+                <h4>Visibility: </h4>
+                <br>
+                <br>
+                <br>
+                <h4>Format: </h4>
+                <br>
+                <h4>Mastery Paths: </h4>
+                <br>
+                <h4>Description: </h4>
+
+            </td>
+            <td valign="top">
+                <form id="textarea">
+                    <textarea cols="30" rows="2">Choose Image</textarea>
+                </form>
+                <br>
+                CS4550 12631 Web Development SEC 01 Fall 2023 [BOS-1-TR]
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                CS4550.12631.202410
+                <br>
+                <br>
+                <br>
+                <br>
+                No
+                <br>
+                <br>
+                <br>
+                <br>
+                <input type="checkbox" value="text" name="check-template" id="chkbox-template" />
+                <label for="chkbox-template">Enable Course as a Course Template</label>
+                <br>
+                <br>
+                <br>
+                <br>
+                <select id="select-time-zone">
+                    <option value="EST">Eastern Time (US & Canada) (-5:00/-4:00)</option>
+                </select>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                CS4550.12631.202410
+                <br>
+                <br>
+                <br>
+                <br>
+                CS Undergrad
+                <br>
+                <br>
+                <br>
+                <br>
+                202410_1 Fall 2023 Semester Full Term
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <select id="select-participation">
+                    <option value="term">Term</option>
+                </select>
+                <br>
+                Course participation is limited to term start and end dates.
+                <h3>Start</h3>
+                <input type="date" id="start-date" value="2000-01-01" />
+                <h3>End</h3>
+                <input type="date" id="end-date" value="2000-01-01" />
+                <br>
+                <br>
+                <input type="checkbox" value="before" name="check-restrict" id="chkbox-before" />
+                <label for="chkbox-before">Restrict students from viewing course before term start date</label> <br />
+                <input type="checkbox" value="after" name="check-restrict" id="chkbox-after" />
+                <label for="chkbox-after">Restrict students from viewing course after term end date</label> <br />
+                    <br>
+                    
+                    <select id="select-due">
+                        <option value="default">Account default (11:59pm)</option>
+                    </select>
+                    <br>
+                    This influences the user interface for setting due dates. It does not change the time due for any
+                    existing assignments.
+                    <br>
+                    <br>
+                    <br>
+                    <select id="select-language">
+                        <option value="english">Not set (user-configurable, defaults to English (United States))
+                        </option>
+                    </select>
+                    <br>
+                    This will override any user/system language preferences. This is only recommended for foreign
+                    languages
+                    courses
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    10000 megabytes
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <input type="checkbox" value="speed-grader" name="check-grade" id="chkbox-speed" />
+                <label for="chkbox-speed">Launch SpeedGrader Filtered by Student Group</label> <br />
+                <br>
+                <br>
+                <br>
+                <input type="checkbox" value="course-grading" name="check-course" id="chkbox-courseg" />
+                <label for="chkbox-courseg">Enable course grading scheme</label> <br />
+                <br>
+                <br>
+                <br>
+                <select id="licensing">
+                    <option value="private">Private (Copyrighted)
+                    </option>
+                </select>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <input type="checkbox" value="copyright-info" name="check-copyright" id="chkbox-copyright" />
+                <label for="chkbox-copyright">Copyright and license information must be provided for files before they are published.</label> <br />
+                <br>
+                <br>
+                <br>
+                If you need to make your course public please contact your administrator/support.
+                <br>
+                <br>
+                <select id="course-type">
+                    <option value="course">Course
+                    </option>
+                </select>
+                <br>
+                <br>
+                <input type="checkbox" value="public-index" name="check-index" id="chkbox-index" />
+                <label for="chkbox-index">Include this course in the public course index</label> <br />
+                <br>
+                <select id="course-format">
+                    <option value="on-campus">On-Campus
+                    </option>
+                </select>
+                <br>
+                <br>
+                <br>
+                <br>
+                <input type="checkbox" value="student" name="check-student" id="chkbox-student" />
+                <label for="chkbox-student">Enable individual learning paths for students based on assessment</label> <br />
+                <br>
+                <br>
+                <br>
+                <form id="textarea">
+                    <textarea cols="30" rows="2"></textarea>
+                </form>
+                <button valign="right">Update Course Details</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
