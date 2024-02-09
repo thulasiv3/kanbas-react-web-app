@@ -1,157 +1,197 @@
-<table>
-    <tbody>
-        <tr>
-            <td valign="top">
-                <ul>
-                    <li><a href="/Kanbas/Account/Profile/screen.html">
-                            Account</a></li>
-                    <li>
-                        <a href="#">Dashboard</a>
-                    </li>
-                    <li>
-                        <a href="/Kanbas/Courses/Home/screen.html">Courses</a>
-                    </li>
-                    <li>
-                        <a href="#">Calendar</a>
-                    </li>
-                    <li><a href="#">Inbox</a></li>
-                    <li><a href="#">History</a></li>
-                    <li><a href="#">Studio</a></li>
-                    <li><a href="#">Commons</a></li>
-                    <li><a href="#">Help</a></li>
-                </ul>
-            </td>
+<html>
 
-            <td valign="top">
-                <ul>
-                    <li>
-                        <a href="/Kanbas/Courses/Home/screen.html">
-                            Home</a>
-                    </li>
-                    <li><a href="#">
-                            Modules</a></li>
-                    <li><a href="#">
-                            Piazza</a></li>
-                    <li><a href="#">
-                            Zoom Meetings</a></li>
-                    <li><a href="/Kanbas/Courses/Assignments/screen.html">
-                            Assignments</a></li>
-                    <li><a href="#">
-                            Quizzes</a></li>
-                    <li><a href="/Kanbas/Courses/Grades/screen.html">
-                            Grades</a></li>
-                    <li><a href="#">
-                            People</a></li>
-                    <li><a href="#">
-                            Panopto Video</a></li>
-                    <li><a href="#">
-                            Discussions</a></li>
-                    <li><a href="#">
-                            Announcements</a></li>
-                    <li><a href="#">
-                            Pages</a></li>
-                    <li><a href="#">
-                            Files</a></li>
-                    <li><a href="#">
-                            Rubrics</a></li>
-                    <li><a href="#">
-                            Outcomes</a></li>
-                    <li><a href="#">
-                            Collaborations</a></li>
-                    <li><a href="#">
-                            Syllabus</a></li>
-                    <li><a href="/Kanbas/Courses/Settings/screen.html">
-                            Settings</a></li>
+<head>
+  <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css" />
+  <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="/Kanbas/styles.css" />
+  <link rel="stylesheet" href="/Kanbas/Navigation/index.css" />
+  <link rel="stylesheet" href="/Kanbas/Courses/Navigation/index.css" />
+  <link rel="stylesheet" href="/Kanbas/Courses/Home/index.css" />
+  <link rel="stylesheet" href="/Kanbas/Courses/Assignments/index.css" />
+</head>
+
+<body>
+  <div class="d-flex">
+    <div class="d-none d-md-block">
+      <ul class="wd-kanbas-navigation">
 
 
-                </ul>
+          <ul class="wd-kanbas-navigation">
+            <li><a href="http://northeastern.edu" style="font-size: xxx-large;">N</a></li>
+            <li class=wd-account><a href="/Kanbas/Account/Profile/screen.html"> <i class="fa fa-user"> </i>Account</a>
+            </li>
+            <li class="wd-active">
+              <a href="/Kanbas/Dashboard/screen.html">
+                <i class="fa fa-tachometer"></i> Dashboard</a>
+            </li>
+            <li>
+              <a href="/Kanbas/Courses/Home/screen.html">
+                <i class="fa fa-book"></i>Courses</a>
+            </li>
+            <li><a href="#"><i class="fa fa-calendar"></i> Calendar</a></li>
+            <li><a href="#"><i class="fa fa-envelope"></i>
+                Inbox</a>
+            </li>
+            <li><a href="#"><i class="fa fa-clock-o"></i>
+                History</a>
+            </li>
+            <li><a href="#"><i class="fa fa-desktop"></i>
+                Studio</a>
+            </li>
+            <li><a href="#"><i class="fa fa-arrow-right"></i>
+                Commons</a>
+            </li>
+            <li><a href="#"><i class="fa fa-question-circle"></i><br>
+                Help</a>
+            </li>
+          </ul>
 
-            </td>
+      </ul>
+    </div>
+    <div class="d-none d-md-block">
+      <ul class="wd-navigation">
 
-            <td>
-                <select id="select-grade-option">
-                    <option value="gradebook">Gradebook</option>
-                </select>
-                <button type="button">Import</button>
-                <select id="select-import-option">
-                    <option value="export">Export</option>
-                </select>
-                <button type="button">Configure</button>
-                <br>
-                <h2>Student Names</h2>
-                <br>
-                <form id="student-names">
-                    <input id="enter-student-name" placeholder="Search Students" /><br />
+
+          <ul class="wd-navigation">
+            <li>
+              <a href="/Kanbas/Courses/Home/screen.html">Home</a>
+            </li>
+            <li>
+              <a href="/Kanbas/Courses/Modules/screen.html">Modules</a>
+            </li>
+            <li><a href="http://piazza.com">Piazza</a></li>
+            <li><a href="#">Zoom Meetings</a></li>
+            <li>
+              <a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a>
+            </li>
+            <li><a href="#">Quizzes</a></li>
+            <li class="wd-active"><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
+            <li><a href="#">Panopto Video</a></li>
+            <li><a href="#"> Discussions <i class="fa fa-eye-slash"></i></a></li>
+            <li><a href="#">Announcements <i class="fa fa-eye-slash"></i></a></li>
+            <li><a href="#">Pages <i class="fa fa-eye-slash"></i> </a></li>
+            <li><a href="#">Files <i class="fa fa-eye-slash"></i> </a></li>
+            <li><a href="#">Rubrics <i class="fa fa-eye-slash"></i> </a></li>
+            <li><a href="#">Outcomes <i class="fa fa-eye-slash"></i> </a></li>
+            <li><a href="#">Collaborations <i class="fa fa-eye-slash"></i> </a></li>
+            <li><a href="#">Syllabus <i class="fa fa-eye-slash"></i> </a></li>
+          </ul>
+
+      </ul>
+    </div>
+    <div class="container">
+      <div class="flex-fill offset-md-1">
+        <h7 class="breadcrumb-item active"> <i class="fa fa-bars"></i> <a href="#">CS5610.11744.202310</a> > Grades
+        </h7>
+        <hr />
+        <ul class="list-group wd-grades">
+          <div class="d-flex flex-row-reverse bd-highlight">
+            <div class="p-2 bd-highlight"><button class="btn btn-primary"
+              style="background-color: white; color:black"><i class="fa fa-cog"></i></button>
+          </div>
+            <div class="p-2 bd-highlight"><select id="select-export" class="form-control">
+                <option value="export"><i class="fa-solid fa-file-export"></i> Export</option>
+              </select></div>
+            <div class="p-2 bd-highlight">
+              <button class="btn btn-primary"
+                style="background-color: white; color:black"><i class="fa fa-upload"></i>
+                Import</button>
+              </div>
+          </div>
+
+          <hr />
+          <div class="row">
+            <div class="col-6">
+              <label for="student-names" class="form-label">Student Names</label>
+              <i class="fa fa-search"></i> <input type="text" class="form-control" id="student-names"
+                placeholder="Search Students">
+            </div>
+            <div class="col-6">
+              <label for="assignment-names" class="form-label">Assignment Names</label>
+              <i class="fa fa-search"></i> <input type="text" class="form-control" id="assignment-names"
+                placeholder="Search Assignments">
+            </div>
+          </div>
+          <br>
+          <button class="btn btn-primary" style="background-color: white; color:black"><i class="fa fa-filter"></i>
+            Apply
+            Filters</button>
+          <br>
+        </ul>
+      </div>
+      <br>
+      <div class="table-responsive offset-md-1">
+        <table class="table table-bordered table-striped">
+          <thead>
+            <tr>
+              <th>Student Name</th>
+              <th>A1 SETUP Out of 100</th>
+              <th>A2 HTML Out of 100</th>
+              <th>A3 CSS Out of 100</th>
+              <th>A4 BOOTSTRAP Out of 100</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="color:red">Kim Kardashian</td>
+              <td>
+                <form id="grade-one">
+                  <input class="form-control" id="enter-grade-one" placeholder="23" />
                 </form>
-                <br>
-                <h2>Assignment Names</h2>
-                <br>
-                <form id="assignment-names">
-                    <input id="enter-assignment-name" placeholder="Search Assignments" /><br />
+              </td>
+              <td>69</td>
+              <td>85</td>
+              <td>91</td>
+            </tr>
+            <tr>
+              <td style="color:red">Nicha Bruce</td>
+              <td>54</td>
+              <td>
+                <form id="grade-two">
+                  <input class="form-control" id="enter-grade-two" placeholder="75" />
                 </form>
-                <br>
-                <button type="button">Apply Filters</button>
-                <br>
-                <br>
-                <table border="1" width="100%">
-                    <thead>
-                    <tr>
-                        <th>Student Name</th>
-                        <th>A1 SETUP Out of 100</th>
-                        <th>A2 HTML Out of 100</th>
-                        <th>A3 CSS Out of 100</th>
-                        <th>A4 BOOTSTRAP Out of 100</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>Kim Kardashian</td>
-                        <td><form id="grade-one">
-                            <input id="enter-grade-one"placeholder= "23"/>
-                            </form>
-                        </td>
-                        <td>69</td>
-                        <td>85</td>
-                        <td>91</td>
-                    </tr>
-                    <tr>
-                        <td>Nicha Bruce</td>
-                        <td>54</td>
-                        <td><form id="grade-two">
-                            <input id="enter-grade-two"placeholder= "75"/>
-                            </form></td>
-                        <td>90</td>
-                        <td>83</td>
-                    </tr>
-                    <tr>
-                        <td>Kanye West</td>
-                        <td><form id="grade-three">
-                            <input id="enter-grade-three"placeholder= "15"/>
-                            </form></td>
-                        <td>42</td>
-                        <td><form id="grade-four">
-                            <input id="enter-grade-four"placeholder= "55"/>
-                            </form></td>
-                        <td>69</td>
-                    </tr>
-                    <tr>
-                        <td>Celeste DiLeo</td>
-                        <td>100</td>
-                        <td>100</td>
-                        <td>100</td>
-                        <td>10</td>
-                    </tr>
-                    </tbody>
-                    <tfoot>
-                    <tr>
-                        <td colspan="4">Average</td>
-                        <td>73</td>
-                    </tr>
-                    </tfoot>
-                 </table>
+              </td>
+              <td>90</td>
+              <td>83</td>
+            </tr>
+            <tr>
+              <td style="color:red">Kanye West</td>
+              <td>
+                <form id="grade-three">
+                  <input class="form-control" id="enter-grade-three" placeholder="15" />
+                </form>
+              </td>
+              <td>42</td>
+              <td>
+                <form id="grade-four">
+                  <input class="form-control" id="enter-grade-four" placeholder="55" />
+                </form>
+              </td>
+              <td>69</td>
+            </tr>
+            <tr>
+              <td style="color:red">Celeste DiLeo</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>10</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="4">Average</td>
+              <td>73</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+
+      </ul>
 
 
-            </td>
-        </tr>
-    </tbody>
-</table>
+      </ul>
+    </div>
+  </div>
+</body>
+
+</html>

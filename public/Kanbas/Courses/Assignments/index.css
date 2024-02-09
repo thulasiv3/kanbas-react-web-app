@@ -1,0 +1,11 @@
+.wd-assignments > .wd-side-bar{
+    border-left: 5px solid green !important;
+}
+
+.wd-assignments > .left-icons{
+    background-color:green;
+}
+
+.list-group, .list-group-item {
+    border-radius: 0; 
+  }
