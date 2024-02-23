@@ -1,0 +1,47 @@
+.wd-kanbas-navigation {
+  background-color: black;
+  list-style: none;
+  padding: 0px;  
+  margin: 0px;
+  width: 80px;
+}
+
+.wd-kanbas-navigation li {
+  padding: 10px;     
+  margin-bottom: 10px;
+  font-size: 0.8em;  
+  text-align: center;
+  background-color: black;
+}
+
+.wd-kanbas-navigation li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Change the color of the icons to red */
+.wd-kanbas-navigation li a i {
+  color: red; /* Change the color to red */
+  font-size: 1em;
+  margin-bottom: 5px;
+}
+
+.wd-kanbas-navigation li.wd-active {
+  background-color: white;
+}
+
+.wd-kanbas-navigation li.wd-active a {
+  color: red;
+}
+
+.wd-kanbas-navigation li.wd-active a i {
+  color: red;
+}
+
+.wd-kanbas-navigation li.wd-account i {
+  color: white;
+}
+
+
+  
+ 
