@@ -1,10 +1,10 @@
-import { assignments, enrollments, grades, users } from "../../Database";
+import db from "../../Database";
 import { useParams } from "react-router-dom";
 import { FaCog, FaUpload, FaSearch, FaFilter, FaArrowRight } from "react-icons/fa";
 function Grades() {
   const { courseId } = useParams();
-  const as = assignments.filter((assignment) => assignment.course === courseId);
-  const es = enrollments.filter((enrollment) => enrollment.course === courseId);
+  const as = db.assignments.filter((assignment) => assignment.course === courseId);
+  const es = db.enrollments.filter((enrollment) => enrollment.course === courseId);
   return (
     <div>
       <ul className="list-group wd-grades">
@@ -55,12 +55,12 @@ function Grades() {
 </thead>
 <tbody>
   {es.map((enrollment) => {
-    const user = users.find((user) => user._id === enrollment.user);
+    const user = db.users.find((user) => user._id === enrollment.user);
     return (
       <tr key={enrollment.user}>
         <td style={{ textAlign: 'center', color: 'red' }}>{user?.firstName} {user?.lastName}</td>
         {as.map((assignment) => {
-          const grade = grades.find(
+          const grade = db.grades.find(
             (grade) => grade.student === enrollment.user && grade.assignment === assignment._id
           );
           return (

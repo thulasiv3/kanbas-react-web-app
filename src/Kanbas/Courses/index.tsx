@@ -13,12 +13,12 @@ import Grades from "./Grades";
 
 
 
-function Courses() {
+function Courses({ courses }: { courses: any[]; }) {
   const { courseId } = useParams();
   const course = courses.find((course) => course._id === courseId);
   const { pathname } = useLocation();
 
-  
+
   const breadcrumbParts = pathname.split("/").map(part => part.charAt(0).toUpperCase() + part.slice(1));
   const lastBreadcrumb = breadcrumbParts[breadcrumbParts.length - 1];
 
@@ -26,9 +26,9 @@ function Courses() {
   return (
     <div>
       <div>
-        <div style={{ display: "flex", justifyContent: "space-between" }}>
-          <h5 style={{ color: "red" }}>
-            <HiMiniBars3 /> {course?._id} {course?.name} 
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+          <h5 style={{ color: "red", margin: 0 }}>
+            <HiMiniBars3 /> {course?._id} {course?.name}
             {lastBreadcrumb && (
               <span>
                 <span> {'>'} </span>
@@ -37,18 +37,13 @@ function Courses() {
                 </Link>
               </span>
             )}
+           
+            <button className="btn btn-primary border border-secondary float-end" style={{ backgroundColor: 'lightgrey', color: 'black' }}>
+          <FaGlasses /> Student View
+        </button>
           </h5>
-          <button className="btn btn-primary border border-secondary" style={{ backgroundColor: 'lightgrey', color: 'black' }}>
-            <FaGlasses /> Student View
-          </button>
         </div>
 
-
-              
-        
-      
-      
-      
       </div>
       <CourseNavigation />
       <div>
@@ -57,14 +52,14 @@ function Courses() {
           style={{ left: "320px", top: "50px" }} >
           <Routes>
             <Route path="/" element={<Navigate to="Home" />} />
-            <Route path="Home" element={<Home/>} />
-            
+            <Route path="Home" element={<Home />} />
 
-            <Route path="Modules" element={<Modules/>} />
+
+            <Route path="Modules" element={<Modules />} />
 
             <Route path="Piazza" element={<h1>Piazza</h1>} />
-            <Route path="Assignments" element={<Assignments/>} />
-            <Route path="Assignments/:assignmentId" element={<AssignmentEditor/>} />
+            <Route path="Assignments" element={<Assignments />} />
+            <Route path="Assignments/:assignmentId" element={<AssignmentEditor />} />
             <Route path="Quizzes" element={<h1>Quizzes</h1>} />
             <Route path="Grades" element={<Grades />} />
             <Route path="Discussions" element={<h1>Discussions</h1>} />
