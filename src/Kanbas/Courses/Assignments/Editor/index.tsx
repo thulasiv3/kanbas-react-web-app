@@ -13,8 +13,10 @@ import { KanbasState } from "../../../store";
 
 
 
+
 function AssignmentEditor() {
   const { courseId } = useParams<{ courseId: string }>();
+  const { assignmentId } = useParams<{ assignmentId: string }>();
   const assignmentList = useSelector((state: KanbasState) =>
     state.assignmentsReducer.assignments);
   const assignment = useSelector((state: KanbasState) =>
@@ -22,13 +24,17 @@ function AssignmentEditor() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
-  function saveChanges(assignmentName : string){
-    if(assignmentName == assignment.name){
-    dispatch(updateAssignment(assignment._id))
-    }else{
-      dispatch(addAssignment(assignment))
-    }
-  }
+  
+
+  // function saveChanges(assignment: Assignment) {
+  //   const existingIndex = db.assignments.findIndex(a => a._id === assignment._id);
+  
+  //   if (existingIndex) {
+  //     dispatch(updateAssignment(assignment));
+  //   } else {
+  //     dispatch(addAssignment(assignment));
+  //   }
+  // }
   // const handleSave = () => {
   //   console.log("Actually saving assignment TBD in later assignments");
   //   navigate(`/Kanbas/Courses/${courseId}/Assignments`);
@@ -70,8 +76,8 @@ function AssignmentEditor() {
       <br />
      
       <Link to={`/Kanbas/Courses/${courseId}/Assignments`}
-        className="btn btn-danger float-end" style={{marginRight: "10px"}} // Added mr-2 class for margin-right
-        onClick={() => saveChanges(assignment.name)}>
+        className="btn btn-danger float-end" style={{marginRight: "10px"}} 
+        onClick={() => dispatch(addAssignment({ ...assignment, assignment: assignmentId }))}>
         Save
       </Link>
       
